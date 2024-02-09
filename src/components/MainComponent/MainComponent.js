@@ -74,8 +74,12 @@ const MainComponent = ({
           </div>
           <div className={classes.userWrapper}>
             {data.users.slice(0, numberOfUsers).map((user, i) => (
-              <div className={classes.userCircle} key={i}>
-                <div className={classes.user}>{user}</div>
+              <div
+                className={classes.userCircle}
+                key={i}
+                style={{ "--border": user.border }}
+              >
+                <div className={classes.user}>{user.icon}</div>
               </div>
             ))}{" "}
           </div>

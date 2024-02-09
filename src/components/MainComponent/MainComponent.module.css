@@ -31,8 +31,8 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--titleColor);
-  z-index: 1;
+  background: var(--innerPointColor);
+  z-index: 2;
 }
 .box::after {
   content: "";
@@ -43,8 +43,8 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: var(--titleColor);
-  opacity: 0.5;
+  background: var(--outerPointColor);
+
   z-index: 1;
 }
 
@@ -152,6 +152,7 @@
   justify-content: center;
   gap: 24px;
   z-index: 1;
+  position: relative;
 }
 .wrapper-3 .userWrapper {
   gap: 32px;
@@ -171,6 +172,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  border: var(--border);
 }
 .user {
   max-width: 24px;
